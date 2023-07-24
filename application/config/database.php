@@ -75,7 +75,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
+	'hostname' => 'localhost:83',
 	'username' => 'root',
 	'password' => '',
 	'database' => 'forum_asn_digital',
