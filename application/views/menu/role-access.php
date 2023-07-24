@@ -70,7 +70,7 @@
         const roleId = $(this).data('role');
 
         $.ajax({
-            url: "<?= base_url('admin/changeaccess'); ?>",
+            url: "<?= base_url('menu/changeaccess'); ?>",
             type: "POST",
             data: {
                 menuId: menuId,
@@ -88,7 +88,7 @@
                         },
                     }).then((result) => {
                         if (result.isConfirmed) {
-                            document.location.href = "<?= base_url('admin/roleaccess/'); ?>" + roleId;
+                            document.location.href = "<?= base_url('menu/roleaccess/'); ?>" + roleId;
                         }
                     });
                 } else {
